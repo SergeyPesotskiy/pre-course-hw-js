@@ -7,6 +7,6 @@ let copyPassport = { ...passport };
 
 copyPassport.name = "Ivan";
 
-console.log(passport);
+console.log(passport.name);
 
-console.log(copyPassport);
+console.log(copyPassport.name);
