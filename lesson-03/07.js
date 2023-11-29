@@ -4,14 +4,10 @@ const numbers = [
     [111, 200, 333, 400, 555],
 ];
 
-let numbersAnswer = [];
-
-for (let x = 0; x < numbers.length; x++ ) {
-    for (let y = 0; y < numbers[x].length; y++) {
-        if (numbers[x][y] % 2 === 0) {
-            numbersAnswer.push(numbers[x][y]);
-        }
-    }
-}
+let numbersAnswer = numbers.map(function(line) {
+    return line.filter(function(number) {
+        return number % 2 === 0;
+    });
+});
 
 console.log(numbersAnswer);
