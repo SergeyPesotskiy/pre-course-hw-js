@@ -8,7 +8,7 @@ let numbersAnswer = [];
 
 for (let x = 0; x < numbers.length; x++ ) {
     for (let y = 0; y < numbers[x].length; y++) {
-        if (numbers[x][y] % 2 !== 0) {
+        if (numbers[x][y] % 2 === 0) {
             numbersAnswer.push(numbers[x][y]);
         }
     }
